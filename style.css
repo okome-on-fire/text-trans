@@ -32,6 +32,40 @@ h1:before {
     border: 2px solid #272343;
 }
 
+h2 {
+    font-size: 20px;
+    margin: 0 auto 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 20px 10px 30px;
+    color: #272343;
+    border: 2px solid #272343;
+}
+
+h2:before {
+    position: absolute;
+    top: -150%;
+    left: -100px;
+    width: 160px;
+    height: 300%;
+    content: '';
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+    background: #272343;
+}
+
+h2 span {
+    font-size: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: block;
+    padding-top: 10px;
+    padding-left: 12px;
+    color: #fff;
+}
+
 .beforeText {
     width: 600px;
     height: auto;
