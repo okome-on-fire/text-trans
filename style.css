@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: "M PLUS 1p";
 }
 
 .clearfix::after {
@@ -13,6 +14,9 @@ body {
     margin: 20px auto;
     text-align: center;
 }
+
+
+/* 見出し */
 
 h1 {
     font-size: 28px;
@@ -66,6 +70,36 @@ h2 span {
     color: #fff;
 }
 
+h3 {
+    position: relative;
+    display: inline-block;
+    padding: 0 2em;
+    margin: 15px auto 0;
+    text-align: center;
+}
+
+h3:before,
+h3:after {
+    font-family: 'Font Awesome 5 Free';
+    line-height: 1;
+    position: absolute;
+    top: calc(50% - .5em);
+    color: #eb6100;
+}
+
+h3:before {
+    left: 0;
+    content: '\f101';
+}
+
+h3:after {
+    right: 0;
+    content: '\f100';
+}
+
+
+/* コンテンツ */
+
 .beforeText {
     width: 600px;
     height: auto;
@@ -79,7 +113,7 @@ h2 span {
 .transformButton {
     display: block;
     width: 250px;
-    margin: 20px auto;
+    margin: 20px auto 40px;
     padding: 10px 0;
     color: #fff;
     font-size: 20px;
@@ -121,4 +155,29 @@ h2 span {
 
 .classificationTextBox {
     float: right;
+}
+
+.howto {
+    border: 2px solid #272343;
+    margin: 20px auto 0;
+}
+
+.howtoBox ul {
+    position: relative;
+    list-style-type: none;
+    padding: 0.5em 1em 0.5em 2.3em;
+    margin: 0;
+}
+
+.howtoBox li {
+    text-align: left;
+    padding: 0.5em 0;
+}
+
+.howtoBox li:before {
+    content: '\f0a4';
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    left: 1em;
+    color: #eb6100;
 }

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>文章分割装置</title>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="./script.js"></script>
@@ -18,28 +20,33 @@
         <button class="c-btn clearBtn">クリア</button>
         <button class="transformButton">変換</button>
 
-        <p>↓↓↓↓↓↓↓↓↓↓</p>
-
         <div class="afterBox clearfix">
             <div class="afterTextBox">
                 <h2><span>02</span>縦書き文字列</h2>
-                <textarea id="afterText">
+                <textarea id="afterText" readonly>
                 </textarea>
                 <button class="c-btn copyAfterText">文字列をコピーする</button>
             </div>
 
             <div class="classificationTextBox">
                 <h2><span>03</span>文字種別</h2>
-                <textarea id="classificationText">
+                <textarea id="classificationText" readonly>
                 </textarea>
                 <button class="c-btn copyClassText">文字列をコピーする</button>
             </div>
         </div>
 
         <div class="howto">
-            <p>
-
-            </p>
+            <h3>使い方</h3>
+            <div class="howtoBox">
+                <ul>
+                    <li>01の「変換元テキスト」に変換したい文字列を入れる。(改行可)</li>
+                    <li>変換ボタンを押す</li>
+                    <li>
+                        それぞれ好きな方をコピペして良い感じに使う。<br>ボタンを押すと簡単にコピペが出来る。
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
