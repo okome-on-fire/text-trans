@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章分割装置</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <h1>テキスト変換ツール</h1>
+        <textarea name="before" class="beforeText"></textarea>
+        <button class="c-btn clearBtn">クリア</button>
+        <button class="transformButton">変換</button>
+
+        <p>↓↓↓↓↓↓↓↓↓↓</p>
+
+        <div class="afterBox clearfix">
+            <div class="afterTextBox">
+                <button class="c-btn copyAfterText">文字列をコピーする</button>
+                <textarea id="afterText">
+                </textarea>
+            </div>
+
+            <div class="classificationTextBox">
+                <button class="c-btn copyClassText">文字列をコピーする</button>
+                <textarea id="classificationText">
+                </textarea>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
